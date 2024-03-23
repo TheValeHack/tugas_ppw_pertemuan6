@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body {
+    font-family: 'Manrope';
+    background: hsl(210, 46%, 95%);
+    font-size: 13px;
+    margin: 0;
+    font-weight: 500;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.article {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px;
+    box-shadow: 7px 10px 40px 0 hsl(210, 46%, 85%);
+}
+.article-content {
+    background: white;
+    padding: 30px 40px;
+    color: hsl(214, 17%, 51%);
+    max-width: 365px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.article-image {
+    width: 288px;
+}
+.article-image img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.article-header {
+    margin: 0;
+    color: hsl(217, 19%, 35%);
+    margin-bottom: 15px;
+}
+.article-description {
+    margin-bottom: 20px;
+}
+.article-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.article-profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.article-profile-picture {
+    width: 40px;
+    height: 40px;
+}
+.article-profile-picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.article-profile-description {
+    margin-left: 15px;
+}
+.article-profile-description-name {
+    font-weight: 700;
+    color: hsl(214, 19%, 35%);
+}
+.article-profile-description-date {
+    color: hsl(212, 23%, 69%);
+}
+.article-share-button {
+    border-radius: 100%;
+    background: hsl(210, 46%, 95%);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.article-footer {
+    position: relative;
+}
+.article-share-more {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    bottom: 43px;
+    right: -104px;
+}
+.article-share-active {
+    background: hsl(217, 19%, 35%);
+    display: flex;
+    align-items: center;
+    padding: 18px 33px;
+    border-radius: 10px;
+    box-shadow: 7px 10px 31px -1px hsl(217, 19%, 68%);
+}
+.article-share-triangle {
+    width: 0;
+	height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-top: 12px solid hsl(217, 19%, 35%);
+}
+.article-share-text {
+    color: hsl(212, 23%, 69%);
+    letter-spacing: 5px;
+}
+.article-share-choices {
+    display: flex;
+}
+.article-share-choices  img {
+    margin-left: 17px;
+}
+
+@media screen and (max-width: 600px) {
+    .article {
+        flex-direction: column;
+        max-width: 365px;
+    }
+    .article-header {
+        font-size: 1.1rem;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .article-description {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .article-image {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 220px;
+        margin-bottom: 0;
+    }
+    .article-image img {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 15px;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+    .article-content {
+        padding-bottom: 0;
+        padding-right: 0;
+        padding-left: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+    }
+    .article-share-triangle {
+        display: none;
+    }
+    .article-footer {
+        padding: 0 40px;
+        padding-bottom: 30px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .article-footer.mobile-change {
+        padding-bottom: 15px;
+        padding-top: 15px;
+        background: hsl(217, 19%, 35%);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .article-profile.mobile-disabled {
+        display: none;
+    }
+    .article-share {
+        display: flex;
+    }
+    .article-share-more {
+        bottom: 0px;
+        right: 100%;
+        left: 0;
+        position: relative;
+    }
+    .article-share-active {
+        padding: 0;
+        box-shadow: none;
+    }
+}
