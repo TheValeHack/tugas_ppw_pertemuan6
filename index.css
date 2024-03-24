@@ -106,10 +106,10 @@ body {
 }
 .article-share-triangle {
     width: 0;
-	height: 0;
-	border-left: 12px solid transparent;
-	border-right: 12px solid transparent;
-	border-top: 12px solid hsl(217, 19%, 35%);
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid hsl(217, 19%, 35%);
 }
 .article-share-text {
     color: hsl(212, 23%, 69%);
